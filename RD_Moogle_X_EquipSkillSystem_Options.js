@@ -12,12 +12,11 @@ Imported.RD_MoogleX_EQS_Ops = true;
 
   ToDo:
   - Note tag to exempt a skill from SType Requirements.
- - An Eval override for eqsIsLearnedSkill (bool)
+  - An Eval override for eqsIsLearnedSkill (bool)
 
 
  Instructions:
  - Place this plugin directly underneath Moogle_X_EquipSkillSystem plugin. 
-
 
 
 */
@@ -88,7 +87,7 @@ Game_Actor.prototype.getSkillPool = function(typeId) {
   var array = this._skills;
 
   if($.IncludeTraitSkills){
-    array = this._skills.concat(this.addedSkills());
+    array = array.concat(this.addedSkills());
   }
 
   array = array.map(function(skillId) {
