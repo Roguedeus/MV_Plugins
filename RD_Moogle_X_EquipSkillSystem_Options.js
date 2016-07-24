@@ -11,7 +11,13 @@ Imported.RD_MoogleX_EQS_Ops = true;
 /*
 
   ToDo:
-  - TBD.
+  - Note tag to exempt a skill from SType Requirements.
+
+
+ Instructions:
+ - Place this plugin directly underneath Moogle_X_EquipSkillSystem plugin. 
+ - An Eval override for eqsIsLearnedSkill (bool)
+
 
 */
 
